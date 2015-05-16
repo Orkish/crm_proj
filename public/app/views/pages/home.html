@@ -1,0 +1,13 @@
+<div class="jumbotron text-center">
+	<h1>Welcome to Heartbeat Ink</h1>
+
+	<div ng-if="!main.loggedIn">
+		<p>Login to see your account and schedules.</p>
+		<a href="/login" class="btn btn-primary">Login</a>
+	</div>	
+
+	<div ng-if="main.loggedIn">
+		<p>Manage your users.</p>
+		<a href="/users" class="btn btn-primary"></a>
+	</div>
+</div>
